@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400&family=Rubik:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+
+
+//********Text********
+$PaleViolet: hsl(276, 100%, 81%); //(sub-heading at the top of the app UI)
+$ModerateViolet: hsl(276, 55%, 52%); //(chat on the left)
+$DesaturatedDarkViolet: hsl(271, 15%, 43%);//(chat on the right)
+$GrayishBlue: hsl(206, 6%, 79%);// (placeholder text)
+$VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);// (main heading)
+$DarkGrayishViolet: hsl(270, 7%, 64%);//(paragraph)
+//************Gradients************
+$LightMagenta: hsl(293, 100%, 63%);
+$LightViolet: hsl(264, 100%, 61%);
+//********Secondary Colors********
+$White: hsl(0, 0%, 100%);
+$LightGrayishViolet: hsl(270, 20%, 96%);// (app background)
+$VeryDarkDesaturatedViolet : hsl(271, 36%, 24%);//(submit button background)
+$VeryLightMagenta : hsl(289, 100%, 72%);//(radio button outline)
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $White;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+.background-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    z-index: -1;
+    border-bottom-right-radius: 100%;
+    background: linear-gradient(to bottom, $LightMagenta, $LightViolet);
+}
+.container{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    .phone{
+        padding: 13px;
+        width: 300px;
+        height: max-content;
+        background-color: $White;
+        border-radius: 30px;
+        background-color: $White;
+        box-shadow: 5px 5px 60px 1px $DesaturatedDarkViolet;
+        .top{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 80px;
+            border-radius: 20px 20px 0 0 ;
+            background: linear-gradient(to left, $LightMagenta, $LightViolet);
+            position: relative;
+            padding: 10px;
+            color: $White;
+            .three-dot{
+                margin-bottom: 8px;
+                cursor: pointer;
+            }
+            &::before{
+                content: '';
+                width: 150px;
+                height: 30px;
+                background-color: $White;
+                position: absolute;
+                border-radius: 0 0 15px 15px;
+                left: 50%;
+                top: -10px;
+                transform: translateX(-50%);
+            }
+            .profile{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .arrow{
+                    cursor: pointer;
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: $White 2px solid;
+                }
+                .name{
+                    font-size: 13px;
+                    font-weight: bold;
+                    span{
+                        font-size: 10px;
+                        font-weight: 400;
+                        color: $GrayishBlue;
+                    }
+                }
+            }
+        }
+        .phone-container{
+            background-color: $LightGrayishViolet;
+            border-radius: 0 0 20px 20px;
+            padding: 10px;
+            .massages{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .massage{
+                    border-radius: 10px 10px 10px 2px;
+                    padding: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    width:  max-content;
+                    height: max-content;
+                    background-color: #ede5f4;
+                    display: flex;
+                    align-content: center;
+                    justify-content: flex-start;
+                    color: $ModerateViolet;
+                }
+                .right-massages{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-end;
+                    .right{
+                        color: $VeryDarkDesaturatedViolet;
+                        background-color: $White;
+                        box-shadow: 1px 3px 5px 1px $DarkGrayishViolet;
+                        border-radius: 15px 15px 5px 15px;
+                    }                
+                    .images{
+                        background-color: inherit;
+                        box-shadow: none;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                .prices{
+                    border-radius: 10px 10px 10px 2px;
+                    background: linear-gradient(to right, $LightMagenta, $LightViolet);
+                    width: 220px;
+                    height: max-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    padding: 10px;
+                    color: $LightGrayishViolet;
+                    font-size: 13px;                
+                    .radio{
+                        border: 1px solid $DarkGrayishViolet;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+                    .text{
+                       flex-grow: 1;
+                    }
+
+                    .money{
+                        font-size: 15px;
+                        color: $White;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+            .massage-input{
+                background-color: $White;
+                height: 50px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                padding: 5px;
+                margin-top: 10px;
+                .send{
+                    background-color: $VeryDarkDesaturatedViolet;
+                    border-radius: 50px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    cursor: pointer;
+                }
+                p{
+                    margin-left: 15px;
+                    color: $GrayishBlue;
+                }
+            }
+        }
+    }
+    .content{
+        width: 400px;
+        text-align: center;
+        margin-top: 50px;
+
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: $VeryDarkDesaturatedViolet;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: $GrayishBlue;
+            line-height: 25px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    .background-gradient{
+        width: 30%;
+        border-radius:0 0  300px 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+        .content{
+            text-align: start;
+        }
+    }
+}
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

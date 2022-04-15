@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400&family=Rubik:wght@400;500;700&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60%;
+  z-index: -1;
+  border-bottom-right-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to bottom, #e942ff, #8838ff);
+}
+
+.container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+}
+
+.container .phone {
+  padding: 13px;
+  width: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  border-radius: 30px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 60px 1px #6e5d7e;
+          box-shadow: 5px 5px 60px 1px #6e5d7e;
+}
+
+.container .phone .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  border-radius: 20px 20px 0 0;
+  background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to left, #e942ff, #8838ff);
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+.container .phone .top .three-dot {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.container .phone .top::before {
+  content: '';
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  border-radius: 0 0 15px 15px;
+  left: 50%;
+  top: -10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .phone .top .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.container .phone .top .profile .arrow {
+  cursor: pointer;
+}
+
+.container .phone .top .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+
+.container .phone .top .profile .name {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container .phone .top .profile .name span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #c6cacd;
+}
+
+.container .phone .phone-container {
+  background-color: #f5f3f7;
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+}
+
+.container .phone .phone-container .massages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.container .phone .phone-container .massages .massage {
+  border-radius: 10px 10px 10px 2px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #ede5f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #9241c8;
+}
+
+.container .phone .phone-container .massages .right-massages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .phone .phone-container .massages .right-massages .right {
+  color: #3e2753;
+  background-color: white;
+  -webkit-box-shadow: 1px 3px 5px 1px #a39daa;
+          box-shadow: 1px 3px 5px 1px #a39daa;
+  border-radius: 15px 15px 5px 15px;
+}
+
+.container .phone .phone-container .massages .right-massages .images {
+  background-color: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.container .phone .phone-container .massages .right-massages .images img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.container .phone .phone-container .massages .prices {
+  border-radius: 10px 10px 10px 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  width: 220px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  color: #f5f3f7;
+  font-size: 13px;
+}
+
+.container .phone .phone-container .massages .prices .radio {
+  border: 1px solid #a39daa;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.container .phone .phone-container .massages .prices .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .phone .phone-container .massages .prices .money {
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.container .phone .phone-container .massage-input {
+  background-color: white;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.container .phone .phone-container .massage-input .send {
+  background-color: #3e2753;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.container .phone .phone-container .massage-input p {
+  margin-left: 15px;
+  color: #c6cacd;
+}
+
+.container .content {
+  width: 400px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #3e2753;
+  margin-bottom: 20px;
+}
+
+.container .content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #c6cacd;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .background-gradient {
+    width: 30%;
+    border-radius: 0 0  300px 0;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 100px;
+  }
+  .container .content {
+    text-align: start;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
